@@ -37,7 +37,8 @@ def generate_inventory():
                 'public_ip': public_ip,
             }
 
-    print(json.dumps(inventory))
+    data=(json.dumps(inventory, indent=4))
+    print(data)
 
 if __name__ == '__main__':
     generate_inventory()
